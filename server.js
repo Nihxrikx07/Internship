@@ -1,11 +1,11 @@
-const express = require('express');
+express = require('express');
 const mongoose = require('mongoose');
 const AddProject = require('./models/project');
 const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.port||3000;
 
 // Connect to MongoDB
 mongoose.connect("mongodb+srv://nihaloves07:niharika@cluster0.b7jkuj7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0s", {
