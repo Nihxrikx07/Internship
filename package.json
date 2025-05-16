@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "mongoose": "^8.14.3"'
+    "mongoose": "^8.14.3",
     "express":"4.17.1"
   },
   "devDependencies": {},
