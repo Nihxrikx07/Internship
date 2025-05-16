@@ -1,0 +1,42 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: aquamarine;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+header h1 {
+    background-color: aqua;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.btn{
+    padding-bottom: 50px;
+}
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}

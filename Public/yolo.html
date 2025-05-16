@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika's Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Corrected link to external stylesheet -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: palevioletred;
+            font-family: 'Calibri';
+            padding: 15px;
+        }
+
+        .navdiv {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            color: whitesmoke;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+        }
+
+        .logo a {
+            font-size: 35px;
+            font-weight: bold;
+            color: white;
+            font-style: italic;
+        }
+
+        /* About Section Styles */
+        .about-container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #f8c8c8, #f9d7e1);
+        }
+
+        .about-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 30px;
+            border: 5px solid #f9c0c0;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content {
+            flex: 1;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .about-content h2 {
+            font-size: 2.8rem;
+            color: #f79c42;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .about-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            color: #333;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill:hover {
+            transform: scale(1.1);
+            background-color: #f79c42;
+            color: white;
+        }
+
+        /* Contact Button */
+        .contact-btn {
+            background-color: palevioletred;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-btn:hover {
+            background-color: #d05555;
+            transform: translateY(-3px);
+        }
+
+        /* Animation on Scroll */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-image {
+                margin-bottom: 20px;
+            }
+
+            .about-content {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="a">Niharika</a></div>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="pjnew.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section class="about-container fade-in" style="animation-delay: 0.2s;">
+        <div class="about-image">
+            <img src="sakura.jfif" alt="Your Image">
+        </div>
+        <div class="about-content">
+            <h2>Hello! I'm Niharika</h2>
+            <p>
+                I'm a passionate Web Developer with a strong foundation in front-end and back-end technologies.
+                I create responsive, visually appealing websites and applications that deliver excellent user experiences.
+            </p>
+
+            <h3>Skills & Technologies</h3>
+            <div class="about-skills">
+                <div class="skill fade-in" style="animation-delay: 0.4s;">HTML</div>
+                <div class="skill fade-in" style="animation-delay: 0.6s;">CSS</div>
+                <div class="skill fade-in" style="animation-delay: 0.8s;">JavaScript</div>
+                <div class="skill fade-in" style="animation-delay: 1s;">React</div>
+                <div class="skill fade-in" style="animation-delay: 1.2s;">Node.js</div>
+                <div class="skill fade-in" style="animation-delay: 1.4s;">MongoDB</div>
+            </div>
+
+            <a href="contact.html" class="contact-btn fade-in" style="animation-delay: 1.6s;">Get In Touch</a>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niharika</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f7d0d0;
+      color: #333;
+      padding: 0;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+            background-color: palevioletred;
+      font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding: 15px 20px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo a {
+      font-size: 35px;
+      font-weight: bold;
+      color: white;
+      font-style: italic;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    li a:hover {
+      color: #333;
+      transform: translateY(-2px);
+    }
+
+    /* Image Container */
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .image-container img {
+      width: 400px;
+      height: 400px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+      transform: scale(0.95);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Keyframe for Fade-in Effect */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Section -->
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">Niharika</a></div>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="yolo.html">About</a></li>
+        <li><a href="pjnew.html">Projects</a></li>
+        <li><a href="contactnew.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Image Section -->
+  <div class="image-container">
+    <img src="sakura.jfif" alt="Sakura Flowers">
+  </div>
+
+</body>
+</html>
